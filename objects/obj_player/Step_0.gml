@@ -4,14 +4,14 @@ var _ship_speed = 0.1;
 // this method takes in 2 paraments and it lets us wrap the object into the game window
 move_wrap(true, true, 0)
 
-if keyboard_check(vk_up) {
+if keyboard_check(vk_up) or keyboard_check(ord("W")) {
 	//motion_add(image_angle, _ship_speed);
 	motion_add(image_angle, _ship_speed);
 }
-if keyboard_check(vk_left){
+if keyboard_check(vk_left) or keyboard_check(ord("A")) {
 	image_angle += 4
 }
-if keyboard_check(vk_right){
+if keyboard_check(vk_right) or keyboard_check(ord("D")) {
 	image_angle -= 4
 }
 
